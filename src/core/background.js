@@ -36,7 +36,7 @@ function main() {
 							type     : "basic",
 							iconUrl  : "./resource/images/ic_launcher.png",
 							title    : "地震檢知",
-							message  : "偵測到較大晃動，注意安全，並留意 中央氣象局 是否發布 強震即時警報",
+							message  : "偵測到較大晃動，注意安全，並留意 中央氣象署 是否發布 強震即時警報",
 							priority : 2,
 						});
 					audio_note_times++;
@@ -78,8 +78,8 @@ async function ShowWindow() {
 		chrome.windows.create({
 			url    : chrome.runtime.getURL("../index.html"),
 			type   : "popup",
-			height : 410,
-			width  : 440,
+			height : 678,
+			width  : 776,
 		}, (win) => _window = win.id);
 	else
 		chrome.windows.get(_window, (w) => chrome.windows.update(w.id, { focused: true }));
